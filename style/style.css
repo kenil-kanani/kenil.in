@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    background-color: #11111b;
+    color: white;
+}
+
+header {
+    /* padding: 40px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+}
+header nav ul li{
+    font-size: 18px;
+}
+
+header nav ul li:hover {
+    color: rgba(255, 0, 0 ,0.9);
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#hed {
+    margin-top: 20px;
+}
+
+.main-name h1 {
+    font-family: 'Explora', cursive;
+    letter-spacing: 4px;
+}
+
+.hero{
+    height: 700px;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hero-left{
+    /* background-color: aqua; */
+    flex-basis: 500px;
+    flex-shrink: 1;
+    flex-grow: 1;
+
+
+}
+
+.hero-right{
+    /* background-color: rgb(128, 202, 48); */
+    flex-basis: 300px;
+    flex-shrink: 1;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#hey{
+    font-size: 30px;
+    display: block;
+}
+
+#i-am-kenil{
+    font-size: 50px;
+    display: block;
+    margin: 10px 0;
+}
+
+#i-am-kenil span{
+    color: #ec4257;
+}
+#developer span{
+    color: #ec4257;
+
+}
