@@ -134,6 +134,141 @@ header nav ul li:hover {
     cursor: pointer;
 }
 
+/* About Me */
+.about-me-text{
+    font-size: 48px;
+    margin: 0 0 80px;
+    text-align: center;
+}
+.about{
+    text-decoration-line: underline;
+    text-decoration-color: #ec4257;
+}
+.me{
+    color: #ec4257;
+}
+
+.about-me-div{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-me-left{
+    background-color: aquamarine;
+    flex-basis: 50%;
+}
+.about-me-right{
+    background-color: antiquewhite;
+    flex-basis: 50%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.lang{
+    background-color: #1c1c26;
+    border-radius: 5px;
+    width: 88px;
+    padding: 20px 20px 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+}
+.lang p{
+    font-size: 14px;
+}
+
+/* My Projects Section */
+.my-project-text{
+    text-align: center;
+    margin: 80px 0 80px;
+    font-size: 48px;
+}
+.my{
+    color: #EC4257;
+}
+.project_{
+    text-decoration-line: underline;
+    text-decoration-color: #ec4257;
+}
+
+.my-project{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project{
+    padding: 20px;
+    background-color: #1c1c26;
+    border-radius: 10px;
+}
+
+.project-img{
+    width: 250px;
+    border-radius: 10px;
+}
+
+.project-tech{
+    margin-top: 10px;
+    display: flex;
+    width: 250px;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.project-tech-div{
+    background-color: #EC42571A;
+    font-size: 12px;
+    padding: 2px 8px;
+    color: #EC4257;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.project-title{
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+.project-desc{
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.project-btn-div{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.project-code{
+    background-color: #EC4257;
+    padding: 8px 24px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.project-code:hover{
+    cursor: pointer;
+}
+
+.project-live{
+    padding: 8px 24px;
+    border: 1px solid #EC4257;
+    background-color: transparent;
+    color: #EC4257;
+    border-radius: 5px;
+}
+.project-live:hover{
+    cursor: pointer;
+    background-color: rgba(236, 66, 87, 0.05);
+}
+
 
 
 /* Media Query */
