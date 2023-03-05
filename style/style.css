@@ -28,12 +28,13 @@ header nav ul {
     display: flex;
     gap: 35px;
 }
-header nav ul li{
+
+header nav ul li {
     font-size: 18px;
 }
 
 header nav ul li:hover {
-    color: rgba(255, 0, 0 ,0.9);
+    color: rgba(255, 0, 0, 0.9);
     cursor: pointer;
 }
 
@@ -52,71 +53,137 @@ header nav ul li:hover {
     letter-spacing: 4px;
 }
 
-.hero{
+/* Bars Hidden */
+.bars {
+    display: none;
+}
+
+/* Bars End */
+
+
+/* Hero Section */
+.hero {
     height: 700px;
     width: 100vw;
     display: flex;
     flex-wrap: wrap-reverse;
     align-items: center;
-    justify-content: center;
-    gap: 20px;
-    /* background-color: rgba(0, 0, 255, 0.5); */
+    justify-content: space-around;
 }
 
-.hero-left{
-    /* background-color: aqua; */
+.hero-left {
     flex-basis: 500px;
 }
 
-.hero-right{
-    /* background-color: rgb(128, 202, 48); */
+.hero-right {
     flex-basis: 300px;
     display: flex;
 }
 
-.hero-right img{
-    transition: height 2s , width 2s;
+.hero-right img {
+    transition: height 1.5s, width 1.5s;
     height: 450px;
     width: 450px;
 }
 
-
-#hey{
+#hey {
     font-size: 30px;
     display: block;
 }
 
-#i-am-kenil{
-    font-size: 50px;
+#i-am-kenil {
+    font-size: 72px;
     display: block;
     margin: 10px 0;
 }
 
-#i-am-kenil span{
-    color: #ec4257;
-}
-#developer span{
+#i-am-kenil span {
     color: #ec4257;
 }
 
+#developer span {
+    color: #ec4257;
+}
+
+#developer {
+    font-size: 20px;
+    display: block;
+}
+
+#see-my-eork-btn{
+    padding: 10px;
+    background-color: #ec4257;
+    border-radius: 5px 13px;
+    margin-top: 20px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    transition: gap .5s;
+}
+#see-my-eork-btn div{
+    width: 20px;
+}
+
+#see-my-eork-btn:hover{
+    gap: 20px;
+    cursor: pointer;
+}
 
 
-@media(width <= 768px){
-    .hero-right img{
+
+/* Media Query */
+
+@media(width <=768px) {
+    .hero-right img {
         height: 400px;
         width: 400px;
     }
+
+    .bars {
+        display: inline;
+    }
+
+    .menu-list {
+        display: none;
+    }
 }
 
-@media(width <= 425px){
-    .hero-right img{
+@media(width <=425px) {
+    .hero-right img {
         height: 300px;
         width: 300px;
     }
+
+    .bars {
+        display: inline;
+    }
+
+    .menu-list {
+        display: none;
+    }
 }
-@media(width <= 375px){
-   
+
+@media(width <=375px) {
+    .bars {
+        display: inline;
+    }
+
+    .menu-list {
+        display: none;
+    }
 }
-@media(width <= 320px){
-   
+
+@media(width <=320px) {
+    .bars {
+        display: inline;
+    }
+
+    .menu-list {
+        display: none;
+    }
 }

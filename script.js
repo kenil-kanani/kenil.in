@@ -15,7 +15,13 @@ sun.addEventListener("click" , () => {
     }
 })
 
-// Menu Button
+// Button Animation
+
+const btn_arrow = document.querySelector(".arrow");
+const btn = document.querySelector("#see-my-eork-btn");
+btn.addEventListener("onmouseenter",()=>{
+    btn_arrow.style.right = "10px";
+})
 
 
 
