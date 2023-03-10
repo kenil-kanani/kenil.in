@@ -10,6 +10,10 @@ body {
     color: white;
     width: 100vw;
 }
+a{
+    text-decoration: none;
+}
+
 
 header {
     display: flex;
@@ -29,12 +33,16 @@ header nav ul {
     gap: 35px;
 }
 
-header nav ul li {
+header nav ul li a{
     font-size: 18px;
+    color: white;
+    text-decoration: none;
+    position: relative;
 }
 
-header nav ul li:hover {
-    color: rgba(255, 0, 0, 0.9);
+header nav ul li a:hover {
+    /* color: rgba(255, 0, 0, 0.9); */
+    top: 3px;
     cursor: pointer;
 }
 
@@ -53,16 +61,53 @@ header nav ul li:hover {
     letter-spacing: 4px;
 }
 
+.sun{
+    cursor: pointer;
+}
+
 /* Bars Hidden */
 .bars {
     display: none;
+    cursor: pointer;
+    width: 20px;
 }
+
+.nav_menu{
+    position: absolute;
+    height: 0px;
+    display: none;
+    width: 120px;
+    background-color: rgba(236, 66, 87);    
+    right: 10px;
+    top: 10px;
+    transition: height 2s;
+    border-radius: 10px;
+    border: 2px solid #ec4257;
+    box-shadow: 3px 3px rgba(236, 66, 87 , 0.3) ;
+}
+
+.hig{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 150px;
+}
+
+.nav_menu a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+
 
 /* Bars End */
 
 
 /* Hero Section */
 .hero {
+    position: relative;
     height: 700px;
     width: 100vw;
     display: flex;
@@ -134,10 +179,14 @@ header nav ul li:hover {
     cursor: pointer;
 }
 
+
+
+
+
 /* About Me */
 .about-me-text{
     font-size: 48px;
-    margin: 0 0 80px;
+    margin: 40px 0 80px;
     text-align: center;
 }
 .about{
@@ -151,27 +200,37 @@ header nav ul li:hover {
 .about-me-div{
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
 }
 
 .about-me-left{
-    background-color: aquamarine;
-    flex-basis: 50%;
+    /* background-color: aquamarine; */
+    /* flex-basis: 50%; */
+    max-width: 440px;
 }
 .about-me-right{
-    background-color: antiquewhite;
-    flex-basis: 50%;
+    /* background-color: antiquewhite; */
+    /* flex-basis: 50%; */
+    max-width: 395px;
+    min-width: 320px;
     padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 10px;
+    transform: scale(1.2);
 }
-
+.pc{
+    margin-bottom: 5px;
+    text-align: justify;
+}
 .lang{
     background-color: #1c1c26;
     border-radius: 5px;
-    width: 88px;
+    width: 80px;
     padding: 20px 20px 15px;
     display: flex;
     align-items: center;
@@ -179,8 +238,14 @@ header nav ul li:hover {
     flex-direction: column;
 }
 .lang p{
-    font-size: 14px;
+    font-size: 12px;
 }
+
+
+
+
+
+
 
 /* My Projects Section */
 .my-project-text{
@@ -199,12 +264,19 @@ header nav ul li:hover {
 .my-project{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
 }
 
 .project{
     padding: 20px;
     background-color: #1c1c26;
     border-radius: 10px;
+}
+.project:hover{
+    transform: scale(1.02);
 }
 
 .project-img{
@@ -301,6 +373,9 @@ header nav ul li:hover {
     .menu-list {
         display: none;
     }
+    .about-me-right{
+        transform: scale(1);
+    }
 }
 
 @media(width <=375px) {
@@ -310,6 +385,9 @@ header nav ul li:hover {
 
     .menu-list {
         display: none;
+    }
+    .about-me-right{
+        transform: scale(1);
     }
 }
 
@@ -321,4 +399,12 @@ header nav ul li:hover {
     .menu-list {
         display: none;
     }
+    .about-me-right{
+        transform: scale(1);
+    }
+}
+
+.theam{
+    background-color: rgba(28, 28, 38, 0.1);
+    color: #EC4257;
 }
