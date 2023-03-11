@@ -15,19 +15,24 @@ sun.addEventListener("click" , () => {
         project.forEach(element => {
             element.classList.toggle("theam")     
         });
-    if (sun.classList.contains("fa-sun")) {
-        document.body.style.backgroundColor = "#11111b"
-        document.body.style.color = "White"
-        a_nav.forEach((el) => {
-            el.style.color = "White";
-        })
-    }
-    else{
-        document.body.style.backgroundColor = "White"
-        document.body.style.color = "#11111b"
-        a_nav.forEach((el) => {
-            el.style.color = "Black";
-        })
+        document.querySelector(".contact-me-div-left p").style.color = "White";
+        
+        if (sun.classList.contains("fa-sun")) {
+            document.body.style.backgroundColor = "#11111b"
+            document.body.style.color = "White"
+            a_nav.forEach((el) => {
+                el.style.color = "White";
+            })
+        document.querySelector(".contact-me-div-right").style.color = "White";
+        }
+        else{
+            document.body.style.backgroundColor = "White"
+            document.body.style.color = "#11111b"
+            a_nav.forEach((el) => {
+                el.style.color = "Black";
+            })
+        document.querySelector(".contact-me-div-right").style.color = "Black";
+        document.querySelector(".contact-me-div-right").style.backgroundColor = "rgba(28, 28, 38, 0.001)";
 
     }
 })
