@@ -285,7 +285,7 @@ header nav ul li a:hover {
     background-color: #1c1c26;
     border: 2px solid transparent;
     border-radius: 10px;
-    transition: 0.6s;
+    transition: 0.3s;
 }
 
 .project:hover {
@@ -473,7 +473,7 @@ textarea {
     font-size: 18px;
 }
 .footer-div1 a:hover{
-    color: white;
+    color: rgb(214, 212, 212);
 }
 .footer-div2{
     width: 100vw;

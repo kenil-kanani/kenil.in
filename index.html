@@ -126,6 +126,7 @@
     <!-- My Projects Section -->
     <h1 id="project-section" class="my-project-text"><span class="my">My </span>Proj<span class="project_">ect</span></h1>
     <div class="my-project container">
+        <!-- Project-1 -->
         <div class="project-1 project">
             <img src="./assets/portfolio.png" alt="project-img" class="project-img">
             <div class="project-tech">
@@ -139,54 +140,22 @@
                 <a href="https://kenil.in"><button class="project-live">Live <i class="fa-solid fa-square-up-right"></i></button></a>
             </div>
         </div>
+        <!-- Project-2 -->
         <div class="project-1 project">
-            <img src="./assets/portfolio.png" alt="project-img" class="project-img">
+            <img src="./assets/14-projects.png" alt="project-img" class="project-img">
             <div class="project-tech">
-                <div class="project-tech-div">TailwindCSS</div>
-                <div class="project-tech-div">NextJS</div>
-                <div class="project-tech-div">TypeScript</div>
-                <div class="project-tech-div">TypeScript</div>
-                <div class="project-tech-div">TypeScript</div>
+                <div class="project-tech-div">HTML</div>
+                <div class="project-tech-div">CSS</div>
+                <div class="project-tech-div">Vanilla JS</div>
             </div>
-            <h1 class="project-title">Portfolio</h1>
-            <p class="project-desc">This is my Portfolio project.</p>
+            <h1 class="project-title">14 Days Of JS</h1>
+            <p class="project-desc">14 Projects</p>
             <div class="project-btn-div">
-                <button class="project-code">Code <i class="fa-brands fa-github"></i></button>
-                <button class="project-live">Live <i class="fa-solid fa-square-up-right"></i></button>
+                <a href="https://github.com/kenil-kanani/14DaysOfJavascript"><button class="project-code">Code <i class="fa-brands fa-github"></i></button></a>
+                <a href="https://14daysofjavascript.kenil.in"><button class="project-live">Live <i class="fa-solid fa-square-up-right"></i></button></a>
             </div>
         </div>
-        <div class="project-1 project">
-            <img src="./assets/portfolio.png" alt="project-img" class="project-img">
-            <div class="project-tech">
-                <div class="project-tech-div">TailwindCSS</div>
-                <div class="project-tech-div">NextJS</div>
-                <div class="project-tech-div">TypeScript</div>
-                <div class="project-tech-div">TypeScript</div>
-                <div class="project-tech-div">TypeScript</div>
-            </div>
-            <h1 class="project-title">Portfolio</h1>
-            <p class="project-desc">This is my Portfolio project.</p>
-            <div class="project-btn-div">
-                <button class="project-code">Code <i class="fa-brands fa-github"></i></button>
-                <button class="project-live">Live <i class="fa-solid fa-square-up-right"></i></button>
-            </div>
-        </div>
-        <div class="project-1 project">
-            <img src="./assets/portfolio.png" alt="project-img" class="project-img">
-            <div class="project-tech">
-                <div class="project-tech-div">TailwindCSS</div>
-                <div class="project-tech-div">NextJS</div>
-                <div class="project-tech-div">TypeScript</div>
-                <div class="project-tech-div">TypeScript</div>
-                <div class="project-tech-div">TypeScript</div>
-            </div>
-            <h1 class="project-title">Portfolio</h1>
-            <p class="project-desc">This is my Portfolio project.</p>
-            <div class="project-btn-div">
-                <button class="project-code">Code <i class="fa-brands fa-github"></i></button>
-                <button class="project-live">Live <i class="fa-solid fa-square-up-right"></i></button>
-            </div>
-        </div> 
+        
     </div>
 
     <!-- Contact Me -->
@@ -203,20 +172,15 @@
             </div>
         </div>
         <div class="contact-me-div-right">
-            <form action="">
-                Name
-                <br>
-                <input type="text">
-                <br>
-                Email
-                <br>
-                <input type="email">
-                <br>
-                Message
-                <br>
-                <textarea name="paragraph_text" cols="70" rows="10"></textarea>
+            <form action="submit-form.php" method="POST">
+                <label for="name">Name:</label><br>
+                <input type="text" name="name" id="name"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" name="email" id="email"><br>
+                <label for="message">Message:</label><br>
+                <textarea name="message" id="message" cols="70" rows="10"></textarea><br>
             </form>
-            <button id="see-my-eork-btn">Send Message</button>
+            <button id="see-my-eork-btn" type="submit">Send Message</button>
         </div>
     </div>
 

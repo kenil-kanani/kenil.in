@@ -51,6 +51,3 @@ let a = document.body.querySelectorAll(".nav_menu a");
     a[1].addEventListener("click",reuse);
     a[2].addEventListener("click",reuse);
     a[3].addEventListener("click",reuse);
-
-
-
